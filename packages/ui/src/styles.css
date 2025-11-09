@@ -1,0 +1,13 @@
+/* Tailwind's base layer - includes CSS reset and base element styles */
+@tailwind base;
+
+/* Tailwind's component layer - for component classes */
+@tailwind components;
+
+/* Tailwind's utilities layer - all the utility classes like flex, grid, text-center, etc. */
+@tailwind utilities;
+
+/* 
+  This file needs to be imported in your Next.js apps' layout.tsx files
+  Example: import "@repo/ui/styles.css"
+*/
