@@ -12,12 +12,12 @@
 import { cn } from "@/lib/utils";
 
 // Example: A button component using Tailwind classes
-export function TailwindButton({ 
-  children, 
+export function TailwindButton({
+  children,
   variant = "primary",
-  className 
-}: { 
-  children: React.ReactNode; 
+  className
+}: {
+  children: React.ReactNode;
   variant?: "primary" | "secondary";
   className?: string;
 }) {
@@ -100,9 +100,9 @@ export function TailwindButton({
  * that users can override:
  */
 
-export function FlexibleCard({ className, children }: { 
-  className?: string; 
-  children: React.ReactNode 
+export function FlexibleCard({ className, children }: {
+  className?: string;
+  children: React.ReactNode
 }) {
   return (
     <div className={cn(
