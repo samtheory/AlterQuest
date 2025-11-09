@@ -1,7 +1,8 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
-import { cn } from "@/lib/utils";
+// import { cn } from "@repo/ui/lib/utils";
 import styles from "./page.module.css";
+import { cn } from "@repo/ui/lib/utils";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -32,11 +33,11 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol>
-          <li>
+        <ol className="flex flex-col bg-red-900 gap-4 mt-6 text-lg max-w-md">
+          <li className={cn("bg-red-400 px-2")}>
             Get started by editing <code>apps/docs/app/page.tsx</code>
-          </li>
-          <li>Save and see your changes instantly.</li>
+          </li >
+          <li className={cn("text-blue-300")}>Save and see your changes instantly.</li>
         </ol>
 
         <div className={styles.ctas}>

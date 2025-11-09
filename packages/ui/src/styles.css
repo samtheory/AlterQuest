@@ -1,11 +1,20 @@
-/* Tailwind's base layer - includes CSS reset and base element styles */
-@tailwind base;
+/**
+ * Tailwind CSS v4 - All configuration is now done in CSS!
+ * @import is the new way to include Tailwind layers
+ */
+@import "tailwindcss";
 
-/* Tailwind's component layer - for component classes */
-@tailwind components;
-
-/* Tailwind's utilities layer - all the utility classes like flex, grid, text-center, etc. */
-@tailwind utilities;
+/**
+ * Custom theme configuration
+ * In v4, you configure everything here instead of tailwind.config.js
+ */
+@theme {
+  /* You can extend the theme here */
+  /* Example:
+  --color-primary: #3b82f6;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  */
+}
 
 /* 
   This file needs to be imported in your Next.js apps' layout.tsx files
